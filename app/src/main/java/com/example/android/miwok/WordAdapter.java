@@ -1,7 +1,6 @@
 package com.example.android.miwok;
 
 import android.app.Activity;
-import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -37,10 +36,10 @@ public class WordAdapter extends ArrayAdapter<Word> {
         ImageView image = (ImageView) listItemView.findViewById(R.id.image);
         image.setImageResource(word.getImage());
 
-        TextView defaultTranslation = (TextView) listItemView.findViewById(R.id.default_translation_textView);
+        TextView defaultTranslation = (TextView) listItemView.findViewById(R.id.default_translation_text_view);
         defaultTranslation.setText(word.getmDefaultTranslation());
 
-        TextView miwokTranslation = (TextView) listItemView.findViewById(R.id.miwok_translation_textView);
+        TextView miwokTranslation = (TextView) listItemView.findViewById(R.id.miwok_translation_text_view);
         miwokTranslation.setText(word.getmMiwokTranslation());
 
         return listItemView;
