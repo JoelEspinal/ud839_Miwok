@@ -17,11 +17,8 @@ import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter<Word> {
 
-    private Word word;
-
     public WordAdapter(Activity context, ArrayList<Word> words) {
         super(context, 0, words);
-
     }
 
     @NonNull
