@@ -8,10 +8,18 @@ public class Word {
 
     private String mDefaultTranslation;
     private String mMiwokTranslation;
+    private int mImage;
+
 
     public Word(String defaultTranslation, String miwokTranslation){
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
+    }
+
+    public Word(String defaultTranslation, String miwokTranslation, int image){
+        mDefaultTranslation = defaultTranslation;
+        mMiwokTranslation = miwokTranslation;
+        mImage = image;
     }
 
     public String getmDefaultTranslation() {
@@ -20,5 +28,10 @@ public class Word {
 
     public String getmMiwokTranslation() {
         return mMiwokTranslation;
+    }
+
+
+    public int getImage(){
+        return mImage;
     }
 }
