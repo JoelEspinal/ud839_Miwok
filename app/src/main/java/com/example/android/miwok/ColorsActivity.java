@@ -39,7 +39,7 @@ public class ColorsActivity extends AppCompatActivity {
         words.add(new Word("black", "kululli", R.mipmap.color_black));
         words.add(new Word("white", "kelelli", R.mipmap.color_white));
 
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_colors);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(adapter);
     }

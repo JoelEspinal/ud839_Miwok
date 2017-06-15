@@ -13,6 +13,7 @@
         android:background="#FFF7DA" />
 
     <LinearLayout
+        android:id="@+id/text_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_toRightOf="@id/image"
